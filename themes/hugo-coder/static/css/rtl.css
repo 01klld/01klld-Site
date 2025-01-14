@@ -1,0 +1,12 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.navigation-list {
+  float: left;
+}
+
+.menu-button {
+  float: left;
+}

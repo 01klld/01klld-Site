@@ -1,0 +1,81 @@
+baseURL = "https://example.com/"
+title = "01kld"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+
+# Multilingual configuration
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en" # Directory for English content
+
+  [languages.ar]
+    languageName = "العربية" # Arabic
+    weight = 2
+    contentDir = "content/ar" # Directory for Arabic content
+    rtl = true # Enable RTL support for Arabic
+
+[params]
+  author = "Khaled"
+  description = "Welcome to my website!"
+  keywords = "blog, Developer, Cyber Security"
+  info = ["Penetration Tester and Network Security"]
+  avatarURL = "images/avatar.jpg"
+  dateFormat = "January 2, 2006"
+  since = 2023
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  maxSeeAlsoItems = 5
+
+  # Social Links
+  [[params.social]]
+    name = "Github"
+    icon = "fa-brands fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/01klld/"
+
+  [[params.social]]
+    name = "Twitter"
+    icon = "fa-brands fa-x-twitter fa-2x"
+    weight = 2
+    url = "https://x.com/01kld"
+
+  [[params.social]]
+    name = "LinkedIn"
+    icon = "fa-brands fa-linkedin fa-2x"
+    weight = 3
+    url = "https://www.linkedin.com/in/khaled-alrowaishan/"
+
+  [[params.social]]
+    name = "Medium"
+    icon = "fa-brands fa-medium fa-2x"
+    weight = 4
+    url = "https://medium.com/@01kld"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    pre = "<i class='fas fa-home'></i>"
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+    pre = "<i class='fas fa-pen'></i>"
+
+  [[menu.main]]
+    name = "Writeups"
+    url = "/writeups/"
+    weight = 3
+    pre = "<i class='fas fa-file-alt'></i>"
+
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 4
+    pre = "<i class='fas fa-file'></i>"
